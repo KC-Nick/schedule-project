@@ -1,7 +1,6 @@
 //Makes sure code waits for page to finish loading before loading
 $(document).ready(function () {
   console.log("ready!");
-});
 //Adds current day to page
 var today = dayjs();
 $('#currentDay').text(today.format('MMM D, YYYY hh:mm:ss'));
@@ -35,3 +34,4 @@ console.log(timeBlock);
 timeBlock.each(timeStyle)
 //Save button functionality
 $(".saveBtn").on('click', handleFormSubmit);
+});
