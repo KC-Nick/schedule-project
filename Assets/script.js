@@ -7,6 +7,7 @@ $('#currentDay').text(today.format('MMM D, YYYY hh:mm:ss'));
 //Holds onto information submitted in the local storage
 function handleFormSubmit(event) {
   event.preventDefault();
+  console.log(this);
   var text = $(this).siblings(".description").val();
   var rowTime = $(this).parent().attr("id");
   console.log(rowTime, text);
@@ -15,6 +16,7 @@ function handleFormSubmit(event) {
 //Styles the box based on what time it is
 function timeStyle() {
   var currentTime = dayjs().hour();
+  //This parses the string of the hour number into an integer so that local storage saves it as a number
   var rowHour = parseInt($(this).attr("id").split("-")[1]);
   console.log(typeof rowHour, typeof currentTime);
   if (rowHour < currentTime) {

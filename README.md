@@ -25,6 +25,7 @@ To use this application, go to [LINK](add live link), and enter in your event in
 ## Credits
 
 Thank you to my instructor and TAs for helping us expand our knowledge, and my tutor who helped me immensly to understand.
+Starter code can be found here [LINK](https://github.com/coding-boot-camp/crispy-octo-meme).
 
 ## License
 
